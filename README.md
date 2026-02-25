@@ -131,16 +131,21 @@ except requests.exceptions.RequestException:
     return "Unable to fetch exchange rate at the moment."
     
 ▶ Local Development Setup
+
 1️⃣ Clone Repository
 git clone https://github.com/Asharay03/Currency_Converter.git
 cd your-repo-name
+
 2️⃣ Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Run Flask Server
 python app.py
+
 5️⃣ Expose Webhook
 ngrok http 5000
 
