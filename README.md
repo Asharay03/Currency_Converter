@@ -4,18 +4,19 @@ An AI-powered Telegram bot that performs real-time currency conversion using Dia
 
 Designed with clean architecture, error handling, and deployment readiness in mind.
 
-🌍 Live Architecture Overview
-User (Telegram)
-        ↓
-Telegram Bot API
-        ↓
-Dialogflow (Intent Detection + Entity Extraction)
-        ↓
-Flask Webhook (Backend Logic)
-        ↓
-ExchangeRate API (Real-time Rates)
-        ↓
-Formatted Response → Telegram → User
+## 🌍 Live Architecture Overview
+
+```mermaid
+flowchart TD
+    A[User - Telegram] --> B[Telegram Bot API]
+    B --> C[Dialogflow]
+    C --> D[Flask Webhook]
+    D --> E[ExchangeRate API]
+    E --> D
+    D --> B
+    B --> A
+```
+
 🚀 Key Features
 
 - Natural Language Understanding (Dialogflow)
@@ -161,7 +162,7 @@ Bot:
 
 1 USD is 90.30 INR
 
-Author
+👨‍💻 Author
 
 Asharay Paliwal
 
