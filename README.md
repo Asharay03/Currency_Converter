@@ -1,4 +1,4 @@
-🤖💱 AI Currency Converter Telegram Bot
+🤖 AI Currency Converter Telegram Bot
 
 An AI-powered Telegram bot that performs real-time currency conversion using Dialogflow NLP, Flask Webhook, and ExchangeRate API.
 
@@ -18,23 +18,23 @@ ExchangeRate API (Real-time Rates)
 Formatted Response → Telegram → User
 🚀 Key Features
 
-🤖 Natural Language Understanding (Dialogflow)
+- Natural Language Understanding (Dialogflow)
 
-💬 Telegram Bot Integration via BotFather
+- Telegram Bot Integration via BotFather
 
-🌍 Real-time Currency Exchange Rates
+- Real-time Currency Exchange Rates
 
-🔄 Dynamic Currency Conversion
+- Dynamic Currency Conversion
 
-⚡ Flask Webhook Backend
+- Flask Webhook Backend
 
-🛡 Robust Error Handling
+- Robust Error Handling
 
-🔐 Environment-based API Key Management
+- Environment-based API Key Management
 
-🌐 Webhook Testing via Ngrok
+- Webhook Testing via Ngrok
 
-📦 Deployment Ready
+- Deployment Ready
 
 🛠 Tech Stack
 
@@ -51,8 +51,9 @@ Formatted Response → Telegram → User
 * Requests
 
 * Ngrok
+  
 
-🧠 Conversational AI (Dialogflow)
+* Conversational AI (Dialogflow)
 
 Built using:
 
@@ -70,7 +71,7 @@ target_currency
 
 Webhook enabled for dynamic exchange rate fetching.
 
-🔐 Environment Configuration
+* Environment Configuration
 
 Create a .env file:
 
@@ -93,14 +94,14 @@ API_KEY = os.getenv("EXCHANGE_RATE_API_KEY")
 
 The application sends an HTTP request to the ExchangeRate API and extracts the conversion_rate from the JSON response.
 
-🔹 Sample API Response
+* Sample API Response
 {
   "result": "success",
   "base_code": "EUR",
   "target_code": "GBP",
   "conversion_rate": 0.8726
 }
-🔹 Extraction Logic
+* Extraction Logic
 import requests
 
 def fetch_conversion_rate(url):
@@ -131,7 +132,7 @@ except requests.exceptions.RequestException:
     
 ▶ Local Development Setup
 1️⃣ Clone Repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Asharay03/Currency_Converter.git
 cd your-repo-name
 2️⃣ Create Virtual Environment
 python -m venv venv
@@ -145,7 +146,7 @@ ngrok http 5000
 
 Paste Ngrok HTTPS URL in Dialogflow Webhook settings.
 
-📊 Example User Interaction
+* Example User Interaction
 
 User:
 
@@ -155,7 +156,7 @@ Bot:
 
 1 USD is 90.30 INR
 
-👨‍💻 Author
+Author
 
 Asharay Paliwal
 Backend Developer | AI Engineer | Python Enthusiast
