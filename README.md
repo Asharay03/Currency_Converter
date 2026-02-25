@@ -135,6 +135,7 @@ except requests.exceptions.RequestException:
 
 1️⃣ Clone Repository
 git clone https://github.com/Asharay03/Currency_Converter.git
+
 cd your-repo-name
 
 2️⃣ Create Virtual Environment
@@ -148,6 +149,7 @@ pip install -r requirements.txt
 python app.py
 
 5️⃣ Expose Webhook
+
 ngrok http 5000
 
 Paste Ngrok HTTPS URL in Dialogflow Webhook settings.
